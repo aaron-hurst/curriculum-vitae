@@ -27,7 +27,7 @@
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
         % Technical skills
-        \node[skills node, yshift=-2.5em] at (sidebarleft |- photo.south west) (techskills) {
+        \node[skills node, yshift=-1.5em] at (sidebarleft |- photo.south west) (techskills) {
             \textbf{Technical Skills} \\[0.4em]
             \mybullet{} Algorithm design \\[\listspacing]
             \mybullet{} Software development \\[\listspacing]
@@ -78,7 +78,7 @@
 
         % Headline
         \node[anchor=west, align=left] at (photo.east -| bodyleft) (headline) {
-            \Huge \textcolor{accentcolour}{\textbf{Aaron Hurst}} \\[0.5em]
+            \Huge \textcolor{accentcolour}{\textbf{\name{}}} \\[0.5em]
             Researcher | Data Scientist | Software Developer \\
             % Dedicated researcher, curious about data and enthusiastic about software \\
         };
@@ -87,7 +87,7 @@
         % Profile
         \node[header node] at (contact.south -| bodyleft) (profile) {\Large\textbf{Profile}};
         \draw[header line] (profile.east)+(0.5em,0) -- (profile -| bodyright)+(-2cm,0);
-        \node[body node] at (profile.south west) (profilebody) {
+        \node[body node, yshift=0.4em] at (profile.south west) (profilebody) {
             I am a professional and dedicated engineer with strong competencies in software development, deep technical understanding in data compression and analytics and a drive to satisfy customers.
 %            He holds BSc (2016) and Masters (2018) degrees in electronic engineering from The University of Western Australia, together with a PhD from Aarhus University (2024).
             My current research as a postdoc at Aarhus University focuses on data compression, big data analytics and sensor calibration, especially within the context of IoT systems.
@@ -104,10 +104,10 @@
             \begin{itemize}[itemsep=-1pt,topsep=0.4em]
                 \item Investigating the application of state-of-the-art data compression and analytics research to practical and commercial contexts.
                 \item Developing robust techniques for optimising the quality of sensor data using limited calibration information.
-                \item Leading collaborations with Aarhus University of Biology and Villanova University.
+                \item Leading collaborations with Aarhus University Department of Biology and Villanova University.
             \end{itemize}
         };
-        \node[body node, yshift=-0.6em] at (e1.south west) (e2) {
+        \node[body node] at (e1.south west) (e2) {
             \textbf{PhD Fellow} \hfill {\footnotesize\color{subduedcolour}Nov 2020--Nov 2023} \\[0.2em]
             Department of Electronic \& Computer Engineering, Aarhus University
             \begin{itemize}[itemsep=-1pt,topsep=0.4em]
@@ -116,7 +116,7 @@
                 \item Optimising federated learning communication efficiency using novel compression techniques in collaboration with Professor Tara Javidi of UCSD.
             \end{itemize}
         };
-        \node[body node, yshift=-0.6em] at (e2.south west) (e3) {
+        \node[body node] at (e2.south west) (e3) {
             \textbf{Data Scientist/Consultant} \hfill {\footnotesize\color{subduedcolour}Feb 2018--Jul 2020} \\[0.2em]
             IBM Australia
             \begin{itemize}[itemsep=-1pt,topsep=0.4em]
@@ -150,14 +150,19 @@
             %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
             % Publications
-            \node[skills node, text width=5.4cm, anchor=west] at (sidebarleft |- current page.west) (publications) {
+            \node[skills node, text width=5.4cm, anchor=north west, yshift=-2.5em] at (sidebarleft) (publications) {
                 \textbf{Publications} \\[0.4em]
+                First author:
                 \begin{itemize}[itemsep=1pt,topsep=0.3em,leftmargin=*]
                     \item PairwiseHist: Fast, Accurate, and Space-Efficient Approximate Query Processing with Data Compression, \textit{VLDB}, 2024.
                     \item GreedyGD: Enhanced Generalized Deduplication compression for IoT applications, \textit{IEEE TII}, 2024.
                     \item GLEAN: Generalized Deduplication enabled approximate edge analytics, \textit{IEEE IoT Journal}, 2022.
                     \item Direct analytics of generalized deduplication compressed IoT data, \textit{IEEE GLOBECOM}, 2021.
                     \item A Low-Cost Hardware-in-the-Loop Agent-Based Simulation Testbed for Autonomous Vehicles, \textit{IEEE/ASME AIM}, 2018.
+                \end{itemize}
+                \vspace{0.5em}
+                Co-author:
+                \begin{itemize}[itemsep=1pt,topsep=0.3em,leftmargin=*]
                     \item Reconfigurable magnetic domain wall pinning using vortex-generated magnetic fields, \textit{Applied Physics Letters}, 2017.
                 \end{itemize}
             };
@@ -180,7 +185,7 @@
                     %\item Five prizes for top marks in individual courses.
                 \end{itemize}
             };
-            \node[body node, yshift=-0.6em] at (e1.south west) (e2) {
+            \node[body node] at (e1.south west) (e2) {
                 \textbf{Bachelor of Science} \hfill {\footnotesize\color{subduedcolour}Feb 2013--Dec 2015} \\[0.2em]
                 The University of Western Australia
                 \begin{itemize}[itemsep=-1pt,topsep=0.4em]
@@ -212,26 +217,27 @@
             %    \item Assisted with documentation management, asset reliability assessments and design verifications.
             %\end{itemize}
         };
-        \node[body node, yshift=-0.6em] at (e1.south west) (e2) {
-            \textbf{Research Intern} \hfill {\footnotesize\color{subduedcolour}Dec 2015--Feb 2016} \\[0.2em]
-            Pawsey Supercomputing Centre
-            %\begin{itemize}[itemsep=-1pt,topsep=0.4em]
-            %    \item Investigating novel magneto-electronic devices using simulations run on Pawsey's supercomputers.
-            %\end{itemize}
-        };
-        \node[body node, yshift=-0.6em] at (e2.south west) (e2) {
+        \node[body node] at (e1.south west) (e2) {
             \textbf{Tutor/Class Facilitator} \hfill {\footnotesize\color{subduedcolour}Feb 2016--Nov 2017} \\[0.2em]
             The University of Western Australia
             %\begin{itemize}[itemsep=-1pt,topsep=0.4em]
             %    \item Facilitated classes of 10--40 students in statistics, project management and semiconductor materials.
             %\end{itemize}
         };
+        \node[body node] at (e2.south west) (e3) {
+            \textbf{Research Intern} \hfill {\footnotesize\color{subduedcolour}Dec 2015--Feb 2016} \\[0.2em]
+            Pawsey Supercomputing Centre
+            %\begin{itemize}[itemsep=-1pt,topsep=0.4em]
+            %    \item Investigating novel magneto-electronic devices using simulations run on Pawsey's supercomputers.
+            %\end{itemize}
+        };
 
-        \node[header node] at (e2.south west) (aboutme) {\Large\textbf{About Me}};
+        \node[header node] at (e3.south west) (aboutme) {\Large\textbf{About Me}};
         \draw[header line] (aboutme.east)+(0.5em,0) -- (aboutme -| bodyright)+(-2cm,0);
-        \node[body node] at (aboutme.south west) (aboutmebody) {
-            I am married to Rebecca and together we have a 9-month-old son and a 40-year-old house in Aarhus Vest, which we are slowly renovating.
-            Family, church, running and home improvement projects fill most of my spare time, although I also love reading, photography and board games.
+        \node[body node, yshift=0.4em] at (aboutme.south west) (aboutmebody) {
+            I am married to Rebecca and together we have a 9-month-old son and a 40-year-old house in Aarhus Vest, which we are gradually renovating.
+            Family, church, running and home improvement projects fill most of my spare time.
+            In between, I love reading, photography and board games---especially long, strategic ones.
         };
 
 
